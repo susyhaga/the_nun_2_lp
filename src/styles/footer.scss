@@ -1,0 +1,87 @@
+@use 'variaveis';
+
+.up_down{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    float: left;
+
+    &__hide{
+        padding:0px 500px;
+        display:block;
+        background-color: black;
+    }
+}
+
+.hide_text{
+    text-align: center;
+    padding-top: 12px;
+    letter-spacing: .2px;
+    padding-bottom: 0px;
+}
+
+.fa.active {
+    color: white;
+    transform: rotateZ(180deg);
+    }  
+
+.btn2{
+  margin:8px;
+    height:38px;
+    padding:8px;
+    margin-left:1294px;
+    background-color: transparent;
+    color: white;
+
+}
+
+.btn1{
+    background-color: transparent;
+    color: white;
+    border:none;
+    font-size: 12px;
+    &:focus{
+        outline: 0px auto -webkit-focus-ring-color;
+    }
+}
+
+.footer {
+    position: fixed;
+    z-index: 6;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 54px;
+    background-color: variaveis.$corDeFundo;
+    font-family: MinionPro, sans-serif;
+    
+
+    &__links {
+        margin-top: 12px;
+        margin-bottom: 0px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        &__item {
+            display: inline-block;
+
+            a {
+                text-decoration: none;
+                line-height: 14px;
+                padding-right: 16px;
+                line-height: 1vw;
+                &:hover {
+                    color: variaveis.$corTextoSecundario;
+                }
+            }
+        }
+    }
+    p{
+        text-align: center;
+    }
+}
