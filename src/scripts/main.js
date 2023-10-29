@@ -3,6 +3,7 @@ const copyText = document.getElementById("myLink");
 const element = document.querySelector(".copy")
 const active = document.querySelector(".checked")
 const buttonCopy = document.querySelector(".button_copy")
+const gif=document.querySelector('scroll-aparecer');
 
 
 linksContainer.addEventListener('click', (e) => {
@@ -69,7 +70,7 @@ $(document).ready(function() {
 		$target.each(function() {
 			if (documentTop > boxTop(this) - offset) {
 				$(this).addClass(animationClass);
-			}
+			} 
 		});
 	}
 	animeScroll();
@@ -97,4 +98,42 @@ $(document).ready(function() {
 	$(document).scroll(function() {
 		setTimeout(function() {animeScroll()}, 350);
 	});
+});
+
+var played = false;
+
+$(window).scroll(function() {
+    var elemTop = $('#trailer').offset().top, 
+    elemHeight = $('#trailer').outerHeight(), 
+    windowHeight = $(window).height(),
+    windowScroll = $(this).scrollTop();
+    var countdownSound = new Audio('/dist/images/audio/scream-noise-142446.mp3');
+
+    if( windowScroll > (elemTop + 500 - windowHeight) && played == false) {
+    countdownSound.play();
+    played=true;
+    }
+});
+
+var gifShow = false;
+$(document).scroll(function(){
+        var elemTop = $('#trailer').offset().top, 
+        elemHeight = $('#trailer').outerHeight(), 
+        windowHeight = $(window).height(),
+        windowScroll = $(this).scrollTop();
+
+
+    $('.scroll-aparecer').stop();
+    if(windowScroll > (elemTop + 500 - windowHeight) && gifShow  == false) {
+        $(window).on('scroll', function() {
+            $('.scroll-aparecer').animate({
+          }, 1500); /*Defina aqui o tempo em milisegundos */
+        });
+        }else{
+            $('.scroll-aparecer').animate({
+            height:"0"
+          },1550); /*Defina aqui o tempo em milisegundos */
+        }
+    gifShow=true;
+
 });
