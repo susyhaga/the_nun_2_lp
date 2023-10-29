@@ -100,6 +100,7 @@ $(document).ready(function() {
 	});
 });
 
+//audio
 var played = false;
 
 $(window).scroll(function() {
@@ -115,6 +116,7 @@ $(window).scroll(function() {
     }
 });
 
+//gif
 var gifShow = false;
 $(document).scroll(function(){
         var elemTop = $('#trailer').offset().top, 
