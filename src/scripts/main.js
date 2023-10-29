@@ -43,14 +43,62 @@ buttonCopy.addEventListener('click', (e) => {
 function myFunction() {
     element.classList.toggle('active');
     active.classList.toggle('active');
-
-
     // Select the text field
     copyText.select();
     copyText.setSelectionRange(0, 99999); // For mobile devices
-
     // Copy the text inside the text field
     navigator.clipboard.writeText(copyText.value);
-
 }
 
+var root = document.documentElement;
+root.className += ' js';
+
+function boxTop(idBox) {
+	var boxOffset = $(idBox).offset().top;
+	return boxOffset;
+}
+
+$(document).ready(function() {
+	var $target = $('.anime_text'),
+			animationClass = 'anime-init',
+			windowHeight = $(window).height(),
+			offset = windowHeight - (windowHeight / 4);
+
+	function animeScroll() {
+		var documentTop = $(document).scrollTop();
+		$target.each(function() {
+			if (documentTop > boxTop(this) - offset) {
+				$(this).addClass(animationClass);
+			} else {
+				$(this).removeClass(animationClass);
+			}
+		});
+	}
+	animeScroll();
+
+	$(document).scroll(function() {
+		setTimeout(function() {animeScroll()}, 350);
+	});
+});
+$(document).ready(function() {
+	var $target = $('.anime_video'),
+			animationClass = 'anime-init',
+			windowHeight = $(window).height(),
+			offset = windowHeight - (windowHeight / 4);
+
+	function animeScroll() {
+		var documentTop = $(document).scrollTop();
+		$target.each(function() {
+			if (documentTop > boxTop(this) - offset) {
+				$(this).addClass(animationClass);
+			} else {
+				$(this).removeClass(animationClass);
+			}
+		});
+	}
+	animeScroll();
+
+	$(document).scroll(function() {
+		setTimeout(function() {animeScroll()}, 350);
+	});
+});
