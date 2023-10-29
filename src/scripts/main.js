@@ -31,12 +31,15 @@ $(document).ready(function(){
         $(".up_down__hide").slideDown();
     });
 });
+
+//Copy
+
 buttonCopy.addEventListener('click', (e) => {
     e.preventDefault();
 
     myFunction();
 });
-//Copy
+
 function myFunction() {
     element.classList.toggle('active');
     active.classList.toggle('active');
