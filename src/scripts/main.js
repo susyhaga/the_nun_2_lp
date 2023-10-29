@@ -69,8 +69,6 @@ $(document).ready(function() {
 		$target.each(function() {
 			if (documentTop > boxTop(this) - offset) {
 				$(this).addClass(animationClass);
-			} else {
-				$(this).removeClass(animationClass);
 			}
 		});
 	}
@@ -91,8 +89,6 @@ $(document).ready(function() {
 		$target.each(function() {
 			if (documentTop > boxTop(this) - offset) {
 				$(this).addClass(animationClass);
-			} else {
-				$(this).removeClass(animationClass);
 			}
 		});
 	}
