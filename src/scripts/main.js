@@ -19,6 +19,8 @@ linksContainer.addEventListener('click', (e) => {
     }
 });
 
+//menu
+
 function closeSideMenu() {
     const sideMenuToggle = document.querySelector('#menu__toggle'); //input
     sideMenuToggle.click('slow');
@@ -51,6 +53,7 @@ function myFunction() {
     navigator.clipboard.writeText(copyText.value);
 }
 
+//scroll animation
 var root = document.documentElement;
 root.className += ' js';
 
@@ -104,13 +107,12 @@ $(document).ready(function() {
 var played = false;
 
 $(window).scroll(function() {
-    var elemTop = $('#trailer').offset().top, 
-    elemHeight = $('#trailer').outerHeight(), 
+    var elemTop = $('#synopsis').offset().top,
     windowHeight = $(window).height(),
     windowScroll = $(this).scrollTop();
     var countdownSound = new Audio('/dist/images/audio/scream-noise-142446.mp3');
 
-    if( windowScroll > (elemTop + 500 - windowHeight) && played == false) {
+    if( windowScroll > (elemTop + 350 - windowHeight) && played == false) {
     countdownSound.play();
     played=true;
     }
@@ -119,23 +121,30 @@ $(window).scroll(function() {
 //gif
 var gifShow = false;
 $(document).scroll(function(){
-        var elemTop = $('#trailer').offset().top, 
-        elemHeight = $('#trailer').outerHeight(), 
+        var elemTop = $('#synopsis').offset().top, 
+        elemHeight = $('#synopsis').outerHeight(), 
         windowHeight = $(window).height(),
         windowScroll = $(this).scrollTop();
 
 
     $('.scroll-aparecer').stop();
-    if(windowScroll > (elemTop + 500 - windowHeight) && gifShow  == false) {
+    if(windowScroll > (elemTop +  500 - windowHeight) && gifShow  == false) {
         $(window).on('scroll', function() {
             $('.scroll-aparecer').animate({
-          }, 1500); /*Defina aqui o tempo em milisegundos */
+          }, 1650); /*Defina aqui o tempo em milisegundos */
         });
         }else{
             $('.scroll-aparecer').animate({
             height:"0"
-          },1550); /*Defina aqui o tempo em milisegundos */
+          },1650); /*Defina aqui o tempo em milisegundos */
         }
     gifShow=true;
-
 });
+
+var removeClass = true;
+$(".menu__item").click(function () {
+    $(".scroll-aparecer").toggleClass('open');
+    removeClass = false;
+    gifShow=true;
+});
+
