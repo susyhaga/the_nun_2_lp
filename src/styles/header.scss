@@ -1,6 +1,5 @@
 @use 'variaveis';
 
-
 .share{
     margin-right: 0px;
     border-radius: 8px;
@@ -14,7 +13,12 @@
     text-align: left;
     z-index:9;
     cursor: pointer;
-    
+    @media (max-width:768px){
+        padding-left:60px;
+    }
+    @media (max-width: 597px) {
+        padding-left:4%;
+    }
     &:first-child {
         margin-right: 0px;
     }
@@ -42,6 +46,24 @@
     }
 }
 
+.button_copy{
+    border: none;
+    &:focus{
+        outline: thin dotted;
+        outline: 0px auto -webkit-focus-ring-color; 
+    }
+}
+
+.checked{
+    display: none;
+}
+
+.copy{
+    display: none;
+}
+.active{
+    display: inline-block;
+}
 .icon__content{
     position: absolute;
     right: 1px;
@@ -58,6 +80,7 @@
     &__box{
         margin-top: 0px;
         padding:10px;
+        padding-bottom: 24px;
         background: #f3f3f3; 
         display: inline;
         padding-top: 12px;
@@ -68,13 +91,9 @@
         img{
             width: 28px;
             height: 24px;
+            
         }
-        a:last-child {
-            margin-bottom: 14px;
-        }
-        a{
-            display: inline-block;
-        }
+        
         p{
             margin-bottom: 15px;
             cursor: pointer;
@@ -122,6 +141,13 @@ right: 0;
     height: 12px;
     z-index: 9;
     cursor: pointer;
+    @media (max-width:768px){
+        margin-left: 80px;
+    }
+    @media (max-width: 597px) {
+        margin-right: 4%;
+    }
+    
 }
 .menu__btn > span,
 .menu__btn > span::before,
