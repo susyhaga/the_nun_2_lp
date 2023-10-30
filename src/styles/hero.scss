@@ -2,33 +2,96 @@
 
 .hero {
     padding: 5.6vw;
-    width: 100%;
-    height: 80vh;
     background-image: url(../images/fundo/fundo_tratado.jpg);
-    text-align: center;
     background-repeat: no-repeat;
-    background-size: contain;
-    display: block;
-    margin-bottom: 20px;
-    
-    &__content{
-        display: flex;
-        margin-left: 200px;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        
-        &__icons{
+    background-size: 100%;
+    margin-bottom: 300px;
+    height: 100vh;
 
-        
+    @media (max-width: 768px) {
+        padding-top: 30px;
+        margin-top: 30px;
+        margin-bottom: 0px;
+        height:100vh;
+    }
+    @media (max-width: 597px) {
+        height: 70vh;
+    }
+
+    &__content{
+        display: block;
+        float: right;
+        align-items: center;
+        padding-top: 200px;
+        margin-right: 70px;
+        @media (max-width: 768px) {
+            display: inline-block;
+            padding-top: 0px;
+            margin-right: 50px;
+            margin-top: 0px;
+            margin-bottom: 4px;
+        }
+        @media (max-width: 597px) {
+            margin-right: 50px;
+            padding-top: 1px;
+            padding-bottom: 10px;
+
+        }
+        &__icons{
+            margin-top: 210px;
+            padding-top: 160px;
+            padding-right: 200px;
             display: flex;
             cursor: pointer;
+
+            @media (max-width: 768px) {
+                size: 10px;
+                width: 8px;
+                margin-top:130px;
+                margin-left: 100px;
+                padding-right: 174px;
+            }
+            @media (max-width: 597px) {
+                size: 1px;
+                width: 3px;
+                margin-top:60px;
+                margin-left: 80px;
+                padding-right: 100px;
+            }
     
             img{
+                margin-top: 20px;
                 width:50px;
                 height:38px;
                 padding: 6px 12px 6px;
                 min-width: 30px;
+                @media (max-width: 768px) {
+                    padding: 4px 6px 4px;
+                    margin-top: 2px;
+                    width:30px;
+                    height:25px;
+                }
+                @media (max-width: 597px) {
+                    padding: 1px 4px 1px;
+                    margin-top: 10px;
+                    width:30px;
+                    height:25px;
+                }
+            }
+
+        }
+        &__container{
+            margin-top: 90px;
+            margin-left: 30px;
+            @media (max-width: 768px) {
+                width: 10px;
+                margin-top: 16px;
+                padding-left: 50px;
+            }
+            @media (max-width: 597px) {
+                width: 8px;
+                margin-left: 0px;
+                padding-right: 160px;
             }
         }
     }
@@ -47,7 +110,18 @@
     outline-color: rgba(128, 0, 0, 0.5);
     outline-offset: 20px;
     transition: all 600ms cubic-bezier(0.2, 0, 0, 0.8);
-
+    @media (max-width: 768px) {
+        font-weight: 100;
+        font-size: 16px;
+        outline-offset: 4px;
+    }
+    @media (max-width: 597px) {
+        margin-top: 2px;
+        padding-left: 10px;
+        outline-offset: 1px;
+        font-size: 14px;
+        transition: all 600ms cubic-bezier(0.1, 0, 0, 0.6);
+    }
     &:hover {
 	color: rgba(138, 0, 0, 0.7);
     outline-color: rgba(71, 126, 232, 0);
@@ -68,6 +142,14 @@
     margin-left:80px;
     img{
         width: 20px;
+        @media (max-width: 768px) {
+            width: 10px;
+            padding-bottom: 60px;
+        }
+        @media (max-width: 597px) {
+            width: 10px;
+            padding-bottom: 80px;
+        }
     }
 }
 @keyframes anima-seta {
