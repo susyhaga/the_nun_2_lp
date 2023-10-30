@@ -122,7 +122,6 @@ $(window).scroll(function() {
 var gifShow = false;
 $(document).scroll(function(){
         var elemTop = $('#synopsis').offset().top, 
-        elemHeight = $('#synopsis').outerHeight(), 
         windowHeight = $(window).height(),
         windowScroll = $(this).scrollTop();
 
