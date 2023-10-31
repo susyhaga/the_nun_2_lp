@@ -115,7 +115,6 @@ $(window).scroll(function() {
     if( windowScroll > (elemTop + 350 - windowHeight) && played == false) {
     countdownSound.play();
     played=true;
-    muted=true;
     }
 });
 
