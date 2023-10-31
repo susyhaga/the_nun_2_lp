@@ -16,11 +16,12 @@
     @media (max-width:768px){
         padding-left:60px;
     }
-    @media (max-width: 597px) {
-        padding-left:4%;
+    @media (max-width: 414px) {
+        padding-right: 60px;
+
     }
     &:first-child {
-        margin-right: 0px;
+        margin-right: 40px;
     }
 
     .close{
@@ -66,9 +67,11 @@
 }
 .icon__content{
     position: absolute;
-    right: 1px;
+    right: 0;
+    top:0;
     width: 164px;
     height: auto;
+    margin-right: 80px;
     text-align: left;
     z-index: 9;
     border: 1px solid transparent;
@@ -76,6 +79,11 @@
     transition: all 0.5s ease;
     top: 40px;
     display: flex;
+    @media (max-width: 414px) {
+        margin-right: 10px;
+        width: auto;
+    
+    }
 
     &__box{
         margin-top: 0px;
@@ -84,6 +92,10 @@
         background: #f3f3f3; 
         display: inline;
         padding-top: 12px;
+        @media (max-width: 414px) {
+
+    
+        }
         a{
         display: inline-block;
         }
@@ -144,8 +156,8 @@ right: 0;
     @media (max-width:768px){
         margin-left: 80px;
     }
-    @media (max-width: 597px) {
-        margin-right: 4%;
+    @media (max-width: 414px) {
+        padding-right: 50px;
     }
     
 }
