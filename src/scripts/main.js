@@ -104,17 +104,18 @@ $(document).ready(function() {
 });
 
 //audio
-var played = true;
+var played = false;
+const countdownSound = document.querySelector('audio');
 
 $(window).scroll(function() {
     var elemTop = $('#synopsis').offset().top,
     windowHeight = $(window).height(),
     windowScroll = $(this).scrollTop();
-    var countdownSound = document.getElementById('#audio_play');
 
-    if( windowScroll > (elemTop + 350 - windowHeight) && played == true) {
+
+    if( windowScroll > (elemTop + 350 - windowHeight) && played == false) {
     countdownSound.play();
-    played=false;
+    played=true;
     }
 });
 
