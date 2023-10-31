@@ -110,7 +110,7 @@ $(window).scroll(function() {
     var elemTop = $('#synopsis').offset().top,
     windowHeight = $(window).height(),
     windowScroll = $(this).scrollTop();
-    var countdownSound = new Audio('/dist/images/audio/scream-noise-142446.mp3');
+    var countdownSound = document.getElementById('#audio_play').value;
 
     if( windowScroll > (elemTop + 350 - windowHeight) && played == false) {
     countdownSound.play();
