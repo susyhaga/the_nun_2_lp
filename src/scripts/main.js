@@ -110,7 +110,7 @@ $(window).scroll(function() {
     var elemTop = $('#synopsis').offset().top,
     windowHeight = $(window).height(),
     windowScroll = $(this).scrollTop();
-    var countdownSound = document.getElementById('#audio_play').value;
+    var countdownSound = document.getElementById('#audio_play');
 
     if( windowScroll > (elemTop + 350 - windowHeight) && played == false) {
     countdownSound.play();
