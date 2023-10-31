@@ -3,7 +3,9 @@ const copyText = document.getElementById("myLink");
 const element = document.querySelector(".copy")
 const active = document.querySelector(".checked")
 const buttonCopy = document.querySelector(".button_copy")
-const gif=document.querySelector('scroll-aparecer');
+const gif = document.querySelector('scroll-aparecer');
+const scream = document.querySelector('animated-word')
+
 
 
 linksContainer.addEventListener('click', (e) => {
@@ -114,10 +116,13 @@ $(window).scroll(function() {
 
 
     if( windowScroll > (elemTop + 350 - windowHeight) && played == false) {
-    countdownSound.play();
-    played=true;
+        countdownSound.preload = "auto";
+        countdownSound.play();
+        played=true;
     }
 });
+
+
 
 //gif
 var gifShow = false;
@@ -148,3 +153,22 @@ $(".menu__item").click(function () {
     gifShow=true;
 });
 
+
+var gifShow= false;
+    $('.animated-word').click(function(){
+        countdownSound.preload = "auto";
+        countdownSound.play();
+        played=true;
+});
+
+function rollDice() {
+    var gifScream= document.querySelector('click_trailer')
+    $('.animated-word').click(function(){
+        gifScream.style.display = 'block';
+        setTimeout();
+
+});
+    setTimeout(() => {
+    gifScream.style.display = 'none';
+    },3000);
+}
