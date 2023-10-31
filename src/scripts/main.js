@@ -104,7 +104,7 @@ $(document).ready(function() {
 });
 
 //audio
-var played = false;
+var played = true;
 
 $(window).scroll(function() {
     var elemTop = $('#synopsis').offset().top,
@@ -112,9 +112,9 @@ $(window).scroll(function() {
     windowScroll = $(this).scrollTop();
     var countdownSound = document.getElementById('#audio_play');
 
-    if( windowScroll > (elemTop + 350 - windowHeight) && played == false) {
+    if( windowScroll > (elemTop + 350 - windowHeight) && played == true) {
     countdownSound.play();
-    played=true;
+    played=false;
     }
 });
 
