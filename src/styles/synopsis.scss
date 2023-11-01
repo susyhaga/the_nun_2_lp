@@ -36,7 +36,7 @@
             margin-right: 200px;
         }
         @media (max-width: 375px) {
-            margin-right: 380px;
+            padding-right: 400px;
         }
             img{
             width: 200px;
@@ -49,9 +49,10 @@
             @media (max-width: 768px) {
                 width: 80px;
                 height: 300%;
+                margin-top: 60px;
             }
             @media (max-width: 375px) {
-            margin-left: 180px;
+            margin-left: 150px;
             }
         }
     }
