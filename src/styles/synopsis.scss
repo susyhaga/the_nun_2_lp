@@ -7,8 +7,6 @@
     margin-bottom: 10px;
     display: block;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
     background-color: variaveis.$corDeFundo;
     background-color:variaveis.$corDeFundoSecundaria;
     color: variaveis.$corTextoSecundario;
@@ -18,7 +16,7 @@
     }
     @media (max-width: 768px) {
         height: 160vh;
-        width: 110vw;
+        width: 120vw;
     }
 
     @media (max-width: 414px) {
@@ -28,7 +26,8 @@
     }
     @media (max-width:375px) {
         height: 400vh;
-        width: 110vw;    }
+        width: 110vw;   
+    }
     &__logo{
         margin: 0 auto;
         max-width: 10vw;
@@ -83,7 +82,7 @@
             padding-bottom: 50px;
             padding-top: 2px;
             @media (max-width: 768px) {
-                margin:0px 100px;
+                margin:0px 50px;
                 padding-bottom: 30px;
                 padding-top: 30px;
             }
