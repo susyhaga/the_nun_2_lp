@@ -169,6 +169,7 @@ clickScream.addEventListener('click', (i) => {
     window.location.href = document.querySelector('.scream_trailer');
     i.preventDefault();
     myScream();
+    i.preventDefault();
     setTimeout(stopScream, 2000);
     i.preventDefault();
 });
