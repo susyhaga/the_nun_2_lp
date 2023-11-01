@@ -166,6 +166,7 @@ var clickScream =  document.querySelector('.animated-word');
 const myTimeout = setTimeout(myScream, 5000);
 
 clickScream.addEventListener('click', (i) => {
+    i.preventDefault();
     window.location.href = document.querySelector('.scream_trailer');
     i.preventDefault();
     myScream();
