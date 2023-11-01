@@ -34,7 +34,7 @@
             margin-bottom: 4px;
         }
         @media (max-width: 414px) {
-            margin-right: 20px;
+            margin-right: 10px;
             padding-top: 1px;
             padding-bottom: 10px;
 
@@ -57,8 +57,7 @@
                 size: 1px;
                 width: 2px;
                 margin-top:0px;
-                margin-left: 80px;
-                padding-right: 150px;
+                padding-right: 100px;
             }
     
             img{
@@ -74,10 +73,10 @@
                     height:25px;
                 }
                 @media (max-width: 414px) {
-                    padding: 1px 4px 1px;
+                    padding: 1px 6px 1px;
                     margin-top: 0px;
                     width:10px;
-                    height:20px;
+                    height:22px;
                 }
             }
 
@@ -91,9 +90,9 @@
                 padding-left: 50px;
             }
             @media (max-width: 414px) {
-                width: 3px;
-                margin-left: 0px;
-                padding-right: 160px;
+                width: 2px;
+                margin-right: 180px;
+                
             }
         }
     }

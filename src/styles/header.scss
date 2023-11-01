@@ -1,16 +1,15 @@
 @use 'variaveis';
 
 .share{
-    margin-right: 0px;
+    width: 10%;
     border-radius: 8px;
     padding-top: 14px;
-    padding-left:34px;
+    padding-left:136px;
     position: fixed;
     right: 0;
-    width: 120px;
     height: auto;
     background:transparent;
-    text-align: left;
+    float:right;
     z-index:9;
     cursor: pointer;
     @media (max-width:768px){

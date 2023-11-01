@@ -154,21 +154,31 @@ $(".menu__item").click(function () {
 });
 
 
-var gifShow= false;
+var trailerShow = false;
     $('.animated-word').click(function(){
         countdownSound.preload = "auto";
         countdownSound.play();
         played=true;
-});
-
-function rollDice() {
-    var gifScream= document.querySelector('click_trailer')
-    $('.animated-word').click(function(){
-        gifScream.style.display = 'block';
-        setTimeout();
 
 });
-    setTimeout(() => {
-    gifScream.style.display = 'none';
-    },3000);
+
+var clickScream =  document.querySelector('.animated-word');
+const myTimeout = setTimeout(myScream, 5000);
+
+clickScream.addEventListener('click', (i) => {
+    window.location.href = document.querySelector('.scream_trailer');
+    i.preventDefault();
+    myScream();
+    setTimeout(stopScream, 2000);
+    i.preventDefault();
+});
+
+
+function myScream() {
+    document.querySelector('.click_trailer').style.display='block';
 }
+
+function stopScream() {
+    document.querySelector('.click_trailer').style.display='none';
+}
+
