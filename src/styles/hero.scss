@@ -89,6 +89,7 @@
                 height:38px;
                 padding: 6px 12px 6px;
                 min-width: 30px;
+                color: variaveis.$corTextoPrincipal;
 
                 @media (max-width: 768px) {
                     padding: 4px 6px 4px;
@@ -124,7 +125,7 @@
             }
             @media (max-width:375px) {
                 margin-top: 50px;
-                margin-left: 74px;
+                margin-left: 76px;
             }
             
         }
