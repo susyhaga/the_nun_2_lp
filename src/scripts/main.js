@@ -126,7 +126,8 @@ $(window).scroll(function() {
 
 //gif
 var gifShow = false;
-$(document).scroll(function(){
+$(document).scroll(function(u){
+    u.preventDefault();
         var elemTop = $('#synopsis').offset().top, 
         windowHeight = $(window).height(),
         windowScroll = $(this).scrollTop();
@@ -163,7 +164,6 @@ var trailerShow = false;
 });
 
 var clickScream =  document.querySelector('.animated-word');
-const myTimeout = setTimeout(myScream, 5000);
 
 clickScream.addEventListener('click', (i) => {
     i.preventDefault();

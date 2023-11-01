@@ -13,28 +13,47 @@
     background-color:variaveis.$corDeFundoSecundaria;
     color: variaveis.$corTextoSecundario;
     text-align: center;
-
+    @media (max-width: 1300px) {
+        height:210vh;
+    }
     @media (max-width: 768px) {
-        padding-left: 0px;
-        height: 330vh;
-        width: 100vw;
+        height: 160vh;
+        width: 110vw;
     }
 
     @media (max-width: 414px) {
         padding-left: 0px;
-        height: 250vh;
+        height: 290vh;
+        width: 110vw;
     }
-
+    @media (max-width:375px) {
+        height: 400vh;
+        width: 110vw;    }
     &__logo{
         margin: 0 auto;
         max-width: 10vw;
         padding-top: 20px;
+
+        @media (max-width: 414px) {
+            margin-right: 250px;
+        }
+        @media (max-width: 375px) {
+            margin-left: 2px;
+        }
             img{
             width: 200px;
             height: 80%;
+
+            @media (max-width: 1300px) {
+                width: 130px;
+                height: 80%;
+            }
             @media (max-width: 768px) {
                 width: 80px;
                 height: 300%;
+            }
+            @media (max-width: 375px) {
+            margin-left: 180px;
             }
         }
     }
@@ -43,10 +62,21 @@
         margin-bottom: 10px;
         letter-spacing: 1.5px;
         line-height: 1.2vw;
+
+        @media (max-width: 1300px) {
+            letter-spacing: 2.5px;
+            line-height: 2.2vw;
+        }
+    
         @media (max-width: 768px) {
             letter-spacing: 3.5px;
             line-height: 3.2vw;
         }
+        @media (max-width: 414px) {
+            letter-spacing: 4.5px;
+            line-height: 5.2vw;
+        }
+
         p{
             margin: 30px 370px;
             text-align: left;
@@ -54,6 +84,11 @@
             padding-top: 2px;
             @media (max-width: 768px) {
                 margin:0px 100px;
+                padding-bottom: 30px;
+                padding-top: 30px;
+            }
+            @media (max-width: 414px) {
+                margin:0px 58px;
                 padding-bottom: 30px;
                 padding-top: 30px;
             }

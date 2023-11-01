@@ -1,24 +1,29 @@
 @use 'variaveis';
 
+
+
 .share{
     width: 10%;
     border-radius: 8px;
-    padding-top: 14px;
+    margin-top: 14px;
     padding-left:136px;
     position: fixed;
     right: 0;
     height: auto;
     background:transparent;
-    float:right;
-    z-index:9;
+    z-index:999;
     cursor: pointer;
+
+    @media (max-width: 1300px) {
+        padding-left:90px;
+    }
     @media (max-width:768px){
-        padding-left:60px;
+        padding-left:50px;
     }
     @media (max-width: 414px) {
-        padding-right: 60px;
-
+        padding-right: 50px;
     }
+    
     &:first-child {
         margin-right: 40px;
     }
@@ -69,31 +74,46 @@
     right: 0;
     top:0;
     width: 164px;
-    height: auto;
-    margin-right: 80px;
+    height: 110px;
+    margin-right: 20px;
     text-align: left;
     z-index: 9;
-    border: 1px solid transparent;
-    border-radius: 24px;
     transition: all 0.5s ease;
     top: 40px;
     display: flex;
+    @media (max-width: 1300px) {
+        top: 30px;
+    }
     @media (max-width: 414px) {
+        top: 30px;
         margin-right: 10px;
-        width: auto;
-    
+        width: 160px;
+        height: 110px;
+    }
+    @media (max-width: 414px) {
+        top: 30px;
+        margin-right: 10px;
+        width: 160px;
+        height: 110px;
+    }
+    @media (max-width: 375px) {
+        top: 30px;
+        margin-right: 10px;
+        margin-left: 10px;
+        width: 160px;
+        height: 110px;
     }
 
     &__box{
-        margin-top: 0px;
         padding:10px;
-        padding-bottom: 24px;
+        padding-bottom: 14px;
         background: #f3f3f3; 
         display: inline;
-        padding-top: 12px;
         @media (max-width: 414px) {
-
-    
+        }
+        @media (max-width:375px){
+            width: 80%;
+            padding:10px;
         }
         a{
         display: inline-block;
@@ -102,6 +122,7 @@
         img{
             width: 28px;
             height: 24px;
+
             
         }
         
@@ -110,11 +131,16 @@
             cursor: pointer;
             font-size: 16px;
             color: #000000;
+            padding-top:15px;
         }
 
         &__close{
             display: flex;
             justify-content: space-between;
+
+            @media (max-width:375px){
+                margin-top:0px;
+            }
         }
 
     }

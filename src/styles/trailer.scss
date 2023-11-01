@@ -1,28 +1,23 @@
 @use "variaveis";
 
 .trailer{
-    position: relative;
     width: 100vw;
     height: 100vh;
     display: block;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: variaveis.$corDeFundo;
-    margin-left: 50px;
-    margin-top: 80px;
+    @media (max-width: 1300px) {
+        width: 90vw;
+    }
     @media (max-width:768px){
-        margin-top: 50px;
         margin-bottom: 100px;
         height: 120vh;
         width: 80vh;
         margin-left: 24px;
     }
     @media (max-width:414px){
-        margin-top: 0px;
-        height: 30vh;
-        width:5vh;
+        height: 70vh;
+        width: 60vh;
     }
+
     h1{
         padding-bottom: 50px;
         text-align: center;
@@ -30,38 +25,64 @@
         font-family: MinionPro, sans-serif;
         font-weight: normal;
         letter-spacing: 0.5px;
+        @media (max-width: 1300px) {
+            padding-left: 80px;
+        }
         @media (max-width: 768px) {
             text-align: left;
             padding-left: 300px;
         }
         @media (max-width:414px){
-            padding-bottom: 0px;
-            text-align: center;
-            padding-left: 150px;
+            font-size: 14px;
+            padding-left: 160px;
+            padding-bottom: 20px;
         }
     }
     &__container{
-        padding-left: 264px;
         max-width: 1024px;
-        @media (max-width: 768px) {
-            padding-left: 60px;
-            }
-            @media (max-width:414px){
-                padding-left: 10px;
-            }
         &__video{
             width: 1200px;
             height:640px;
-            margin:0 auto;
+            margin-left: 34vh;
             border: 1px solid variaveis.$corTextoPrincipal;
+            @media (max-width: 1300px) {
+                width: 950px;
+                height:540px;
+                margin-left: 18vh;
+            }
             @media (max-width: 768px) {
-                width: 600px;
+                width:540px;
                 height: 350px;
+                margin-left: 9vh;
             }
             @media (max-width:414px){
-                width: 350px;
+                width: 300px;
+                height: 220px;
+                margin-left: 34px;
+            }
+            @media (max-width:375px){
+                width: 300px;
                 height: 200px;
+                margin-bottom: 20px;
+                margin-left: 14px;
             }
         }
     }
+}
+
+.click_trailer{
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    opacity: 1;
+    display: none;
+}
+
+.appear{
+    display: block;
 }
