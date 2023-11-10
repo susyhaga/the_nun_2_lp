@@ -14,31 +14,24 @@
         background-color: black;
         padding-top: 50px;
 
-        @media (max-width: 768px) {
-            height: 200px;
-            padding-top: 10px;
+        @media (max-width: 640px) {
+            padding-bottom: 10px;
+        }
+        @media (max-width: 1024px) {
+            padding-bottom: 10px;
+        }
 
-        }
-        @media (max-width: 414px) {
-            height:150px;
-            padding:0 20px;
-        }
-        @media (max-width: 375px) {
-            height:130px;
-        }
         img{
             padding-left: 500px;
-            @media (max-width: 1300px) {
-                padding-left: 200px;
-            }
-            @media (max-width: 768px) {
-                width: 90%;
-                padding-left: 40px;
-            }
-            @media (max-width: 414px) {
+            @media (max-width: 640px) {
+                padding-top:20px;
+                padding-bottom: 10px;
                 width: 100%;
-                padding-left: 4px;
-                margin-bottom: 10px;
+            }
+            @media (max-width: 1024px) {
+                width: 100%;
+                padding-left: 10px;
+                padding-right: 10px;
             }
         }
     }
@@ -51,9 +44,6 @@
     margin-bottom: 0;
     padding-top:0;
 
-    @media (max-width: 414px) {
-        font-size: 6px;
-    }
 
 
 }
@@ -70,22 +60,6 @@
     float: right;
     background-color: transparent;
     color: white;
-    @media (max-width: 1300px) {
-        margin-right: 50px;
-    }
-    @media (max-width: 768px) {
-        margin-left: 630px;
-        margin-top:20px;
-    }
-
-    @media (max-width: 414px) {
-        height:30px;
-        width: 30px;
-        padding:2px;
-        padding:6px;
-        margin-top:20px;
-        margin-right: 0px;
-    }
 }
 
 .btn1{
@@ -107,9 +81,7 @@
     height: 54px;
     background-color: variaveis.$corDeFundo;
     font-family: MinionPro, sans-serif;
-    @media (max-width: 768px) {
-        height: 90px;
-    }
+
 
     
     &__links {
@@ -119,12 +91,7 @@
         align-items: center;
         flex-wrap: wrap;
         justify-content:center;
-        @media (max-width: 414px) {
-            width: 400px;
-            @media (max-width: 375px) {
-                padding-right: 30px;
-            }
-        }
+    
     
         
         &__item {
@@ -135,9 +102,7 @@
                 line-height: 14px;
                 padding-right: 16px;
                 line-height: 1vw;
-                @media (max-width: 375px) {
-                    padding-right: 24px;
-                }
+
                 &:hover {
                     color: variaveis.$corTextoSecundario;
                 }

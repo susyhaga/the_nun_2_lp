@@ -14,7 +14,7 @@
     z-index:999;
     cursor: pointer;
 
-    @media (max-width: 1300px) {
+    @media (max-width: 640px) {
         padding-left:90px;
     }
     @media (max-width:768px){
@@ -81,8 +81,8 @@
     transition: all 0.5s ease;
     top: 40px;
     display: flex;
-    @media (max-width: 1300px) {
-        top: 30px;
+    @media (max-width: 640px) {
+        height: 8000px;
     }
     @media (max-width: 414px) {
         top: 30px;
@@ -109,8 +109,7 @@
         padding-bottom: 14px;
         background: #f3f3f3; 
         display: inline;
-        @media (max-width: 414px) {
-        }
+
         @media (max-width:375px){
             width: 80%;
             padding:10px;
