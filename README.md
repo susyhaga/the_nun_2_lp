@@ -48,7 +48,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 ## Learn More
 
 Check out the Documentation pages:
-- [React documentation](https://reactjs.org/)
+<-- - [React documentation](https://reactjs.org/) -->
 - [Javasciprt documentation](https://devdocs.io/javascript/)
 - [CSS documentation](https://devdocs.io/css/)
 - [HTML documentation](https://developer.mozilla.org/en-US/docs/Web/HTML)
