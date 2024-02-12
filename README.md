@@ -8,7 +8,7 @@ This project is part of the Front End Engineering course at EBAC.
 
 Release date of the project: 30/Oct/2023
 
-### Some native Javascript native methods applied:
+#### Some native Javascript native methods applied:
 
 - addEventListener
 - querySelector
