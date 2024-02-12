@@ -48,8 +48,15 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 ## Learn More
 
 Check out the Documentation pages:
-<!-- - [React documentation](https://reactjs.org/) -->
-- [Javasciprt documentation](https://devdocs.io/javascript/)
+
+- [Javascript documentation](https://devdocs.io/javascript/)
+- [CSS documentation](https://devdocs.io/css/)
+- [HTML documentation](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [Node.js documentation](https://nodejs.org/docs/latest/api/)
+- [Bootstrap documentation](https://getbootstrap.com/docs/4.1/getting-started/introduction/)
+
+<!-- - [React documentation](https://reactjs.org/)
+- [Javascript documentation](https://devdocs.io/javascript/)
 - [CSS documentation](https://devdocs.io/css/)
 - [HTML documentation](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - [Node.js documentation](https://nodejs.org/docs/latest/api/)
@@ -57,4 +64,4 @@ Check out the Documentation pages:
 - [Bootstrap documentation](https://getbootstrap.com/docs/4.1/getting-started/introduction/)
 - [SASS documentation](https://sass-lang.com/documentation/)
 - [Gulp documentation](https://gulpjs.com/docs/en/getting-started/quick-start)
-- [ES6 documentation](http://es6-features.org/#Constants)
+- [ES6 documentation](http://es6-features.org/#Constants)  -->
