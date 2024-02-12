@@ -4,7 +4,7 @@ Project for applying Front end tools on marketing.
 
 Goal: Clone and improve the webpage of the movie The Nun 2, applying new features to the original page.
 
-As the original webpage is from a Horror movie, features were added to play sounds and scary the user when clicking on a button in the page or scrolling down.
+As the original webpage is from a Horror movie, features were added to play sounds and scary the user when clicking on a button or scrolling down.
 
 This project is part of the Front End Engineering course at EBAC. 
 
