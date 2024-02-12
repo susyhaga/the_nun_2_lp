@@ -8,6 +8,16 @@ This project is part of the Front End Engineering course at EBAC.
 
 Release date of the project: 30/Oct/2023
 
+### Some native Javascript native methods used:
+
+- addEventListener
+- querySelector
+- select
+- setTimeout
+- click
+- play
+
+
 ## Available Scripts
 
 In the project directory, you can run:
