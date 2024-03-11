@@ -1,6 +1,6 @@
 ## The Nun 2 Webpage
 
-Project for applying Front end tools on marketing.
+Project for applying Front-end tools on UX.
 
 Goal: Clone and improve the webpage of the movie The Nun 2, applying new features to the original page.
 
